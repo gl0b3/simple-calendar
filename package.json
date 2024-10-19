@@ -1,0 +1,51 @@
+{
+  "name": "@gl0b3/simple-calendar",
+  "version": "1.0.0",
+  "description": "A Simple Calendar, containing a Month Calendar and a Year Calendar web componen",
+  "main": "dist/simple-calendar.es.js",
+  "module": "dist/simple-calendar.es.js",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "buildpackage": "cd dist && npm pack",
+    "serve": "vite preview",
+    "fix": "eslint src --fix",
+    "servor": "npx servor dist index.html 8080 --browse --reload",
+    "loc1extract": "lit-localize extract",
+    "loc2generate": "lit-localize build"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.3",
+    "vite": "^5.4.8"
+  },
+  "dependencies": {
+    "@adobe/lit-mobx": "^2.0.0-rc.4",
+    "@lit-labs/task": "3.1.0",
+    "@lit/localize": "^0.10.4",
+    "@popperjs/core": "^2.10.2",
+    "lit": "^3.2.0",
+    "luxon": "3.5.0",
+    "mobx": "^6.3.3",
+    "npm": "^8.1.4"
+  },
+  "targets": {
+    "main": true
+  },
+  "prepublish": "tsc",
+  "keywords": [
+    "month-calendar",
+    "year-calendar",
+    "simple-calendar"
+  ],
+  "files": [
+    "dist/**/*.js"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/simple-calendar.es.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "author": "gl0b3"
+}

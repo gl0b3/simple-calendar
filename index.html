@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Calendar Demo</title>
+    <script src="/src/simple-calendar.ts" type="module"></script>
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial;
+        font-size: 12px;
+      }
+
+      body {
+        background-color: lightgray;
+        min-height: 100vh;
+        overflow: hidden;
+      }
+
+      div.container {
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;        
+      }
+
+      div.content {
+        flex: 1 1 auto;
+        padding: 10px;
+        overflow: auto;
+      }
+      
+      div.calendar {
+        /* flex: 1 1 auto; */
+        padding: 10px 0;
+        /* overflow: auto; */
+      }
+
+      div.title {
+        flex: 0 0 auto;
+        padding: 10px;
+        color: #006E51;
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      .example {
+        font-size: 14px;
+        font-weight: bold;
+        color: #006E51;
+      }
+
+      div.footer {
+        flex: 0 0 30px;
+        padding: 10px;
+      }
+
+      div.code {
+        display: inline-block;
+        background-color: #333333;
+        padding: 5px;
+        font-size: 12px;
+        font-family:'Courier New', Courier, monospace;
+        font-weight: bold;
+        margin-top: 10px;
+      }
+
+      .tag{
+        color: #808080;
+      }
+      .tagname {
+        color: #568CCA;
+      }
+      .attribute-name {
+        color: #9CDCFE;
+      }
+      .attribute-value {
+        color: #CE916A;
+      }
+      .operator {
+        color: #FFFFFF;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">
+        <span>Simple Calendar Demo</span>
+      </div>
+      <div class="content">
+        <span class="example">Example for Year Calendar:</span>
+        <br>
+        <div class="code"><span class="tag">&lt;</span><span class="tagname">year-calendar</span><span class="attribute-name">&nbsp;year</span><span class="operator">=</span><span class="attribute-value">"2024"</span><span class="attribute-name">&nbsp;locale</span><span class="operator">=</span><span class="attribute-value">"en"</span><span class="attribute-name">&nbsp;year-is-first</span><span class="attribute-name">&nbsp;weekday-type</span><span class="operator">=</span><span class="attribute-value">"short"</span><span class="tag">&gt;&lt;/</span><span class="tagname">year-calendar</span><span class="tag">&gt;</span></div>
+        <div class="calendar">
+          <!-- This is the Year Calendar component -->
+          <year-calendar year="2024" locale="en" year-is-first weekday-type="short"></year-calendar>
+        </div>
+        <hr>
+        <span class="example">Example for Month Calendar:</span>
+        <br>
+        <div class="code"><span class="tag">&lt;</span><span class="tagname">month-calendar</span><span class="attribute-name">&nbsp;year</span><span class="operator">=</span><span class="attribute-value">"2024"</span><span class="attribute-name">&nbsp;month</span><span class="operator">=</span><span class="attribute-value">"5"</span><span class="tag">&gt;&lt;/</span><span class="tagname">month-calendar</span><span class="tag">&gt;</span></div>
+        <div class="calendar">
+          <!-- This is the Month Calendar component -->
+          <month-calendar year="2024" month="5"></month-calendar>
+        </div>
+      </div>
+      <div class="footer">
+        <span>For more information see the README.MD in the source:</span>
+        <br>
+        <a href="https://github.com/gl0b3/simple-calendar">https://github.com/gl0b3/simple-calendar</a>
+      </div>
+    </div>
+  </body>
+</html>
