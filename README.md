@@ -12,6 +12,8 @@ The Simple Calendar module is designed to visually displaying a month or all mon
 The components can be imported into your own (Javascript) program and can be customized in terms of date and style, including language localization.
 
 
+
+
 If you want, you can use only the Month Calendar component or only the Year Calendar component or even both within a project.
 
 
