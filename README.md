@@ -6,6 +6,8 @@ Author: Károly Kótay-Szabó (gl0b3)
 
 Project source: https://github.com/gl0b3/simple-calendar
 
+## Overview
+
 The Simple Calendar module is designed to visually displaying a month or all months of a given year in table form.
 The components can be imported into your own (Javascript) program and can be customized in terms of date and style, including language localization.
 
