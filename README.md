@@ -3,8 +3,9 @@
 Version: 1.0.0
 Author: Károly Kótay-Szabó
 
-The Simple Calendar module is designed to visually display a month or all months of the year in table form.
-It can be imported only the Month Calendar component or the Year Calendar component.
+The Simple Calendar module is designed to visually displaying a month or all months of a given year in table form.
+The components can be imported into your own (Javascript) program and can be customized in terms of date and style.
+If you want, you can use only the Month Calendar component or only the Year Calendar component or even both within a project.
 
 Project source: https://github.com/gl0b3/simple-calendar
 
@@ -98,6 +99,8 @@ For example if you want to disable the gaps between the month calendars you can 
 ```
 
 ### Month Calendar customization
+
+The Month Calendar has many more setting options. The list of CSS variables can be found here:
 
 `month-calendar` CSS variables are the following:
 ```css
@@ -196,22 +199,25 @@ If you don't want to use box shadow when hover over the table, you can turn off:
 
 Install dependencies:
 
-Needless to say, the library requires `Node.js` and `npm` to properly work. For more info: https://docs.npmjs.com/about-npm
-Pull the source code from GitHub. Then in the project root install the dependencies:
+Needless to say, the library requires `Node.js` and `npm` to properly work. For more info: https://docs.npmjs.com/about-npm .
+
+Pull the source code from GitHub, then in the project root install the dependencies:
 
 ```bash
 npm install
 ```
-or shorter form
+or shorter form:
 ```bash
 npm i
 ```
+
+Once the dependencies are installed, you're ready to compile and run the demo or preview your project changes.
 
 ## Demo
 
 ### Build locally
 
-This sample uses the TypeScript compiler to produce JavaScript that runs in modern browsers.
+This project uses the TypeScript compiler to produce JavaScript from Typescript that can run in the browser.
 
 To build the JavaScript version of your component, run build from the project root:
 
@@ -223,7 +229,7 @@ After the build has run, the `dist` directory is created and the files needed fo
 
 ### Run the demo locally
 
-To run the demo locally, type the following command and then open the deom in the browser (the default URL is http://localhost:5173/):
+To run the demo locally, type the following command and then open the demo in the browser (the default URL is http://localhost:5173/):
 
 ```bash
 npm run dev
