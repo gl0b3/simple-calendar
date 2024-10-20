@@ -2,8 +2,8 @@
   "name": "@gl0b3/simple-calendar",
   "version": "1.0.0",
   "description": "A Simple Calendar, containing a Month Calendar and a Year Calendar web componen",
-  "main": "dist/simple-calendar.js",
-  "module": "dist/simple-calendar.js",
+  "main": "./dist/simple-calendar.js",
+  "module": "./dist/simple-calendar.js",
   "type": "module",
   "repository": {
     "type": "git",
@@ -46,9 +46,6 @@
     "mobx": "^6.3.3",
     "npm": "^8.1.4"
   },
-  "targets": {
-    "main": true
-  },
   "prepublish": "tsc",
   "keywords": [
     "month-calendar",
@@ -56,11 +53,13 @@
     "simple-calendar"
   ],
   "files": [
-    "dist/**/*.js"
+    "dist/simple-calendar.js",
+    "dist/simple-calendar.js.map",
+    "README.md"
   ],
   "exports": {
     ".": {
-      "import": "./dist/simple-calendar.es.js"
+      "import": "./dist/simple-calendar.js"
     },
     "./package.json": "./package.json"
   }

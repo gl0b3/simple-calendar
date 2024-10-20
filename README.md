@@ -1,6 +1,7 @@
 # Simple Calendar (made with Lit Element)
 
 Version: 1.0.0
+Author: Károly Kótay-Szabó
 
 The Simple Calendar module is designed to visually display a month or all months of the year in table form.
 It can be imported only the Month Calendar component or the Year Calendar component.
@@ -218,6 +219,8 @@ To build the JavaScript version of your component, run build from the project ro
 npm run build
 ```
 
+After the build has run, the `dist` directory is created and the files needed for the demo are also created in it.
+
 ### Run the demo locally
 
 To run the demo locally, type the following command and then open the deom in the browser (the default URL is http://localhost:5173/):
@@ -225,6 +228,8 @@ To run the demo locally, type the following command and then open the deom in th
 ```bash
 npm run dev
 ```
+
+**_NOTE:_** if you manually load the index.html in the browser from the project folder, it probably won't work. So it is recommended to run Vite Dev Server instead as mentioned above.
 
 ## Known limitations
 

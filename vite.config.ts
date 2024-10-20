@@ -8,13 +8,14 @@ export default defineConfig({
         lib: {
             entry: resolve(__dirname, 'src/simple-calendar.ts'),
             name: 'SimpleCalendar',
+            formats: ['es']
         },
         outDir: 'dist',
         sourcemap: true,
         rollupOptions: {
             external: ['lit'],
             input: {
-                main: resolve(__dirname, 'index.html')
+                main: resolve(__dirname, 'src/simple-calendar.ts')
             },
             output: {
                 globals: {
@@ -29,7 +30,8 @@ export default defineConfig({
       },
       resolve: {
         alias: {
-            'lit': 'lit'
+            'lit': 'lit',
+            '@': resolve(__dirname, 'src')
         }
       }
 })
