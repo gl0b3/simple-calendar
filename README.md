@@ -1,6 +1,6 @@
 # Simple Calendar (made with Lit Element)
 
-Version: 1.0.0
+Version: 1.0.1
 
 Author: Károly Kótay-Szabó (gl0b3)
 
@@ -10,10 +10,6 @@ Project source: https://github.com/gl0b3/simple-calendar
 
 The Simple Calendar module is designed to visually displaying a month or all months of a given year in table form.
 The components can be imported into your own (Javascript) program and can be customized in terms of date and style, including language localization.
-
-
-
-
 If you want, you can use only the Month Calendar component or only the Year Calendar component or even both within a project.
 
 
@@ -129,7 +125,7 @@ The Month Calendar has many more setting options. The list of CSS variables can 
 --month-day-user-select: none;
 --month-today-background-color: #FFFFFF;
 --month-today-color: var(--month-primary-color);
---month-today-border: 1px solid var(--month-today-color);
+--month-today-border: var(--month-today-border-width, 1px) var(--month-today-border-style, solid) var(--month-today-color);
 --month-today-user-select: none;
 --month-weekdays-weekend-background-color: var(--month-secondary-color);
 --month-weekdays-border-bottom: 1px solid var(--month-primary-color);

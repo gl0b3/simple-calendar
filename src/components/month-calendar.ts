@@ -327,7 +327,7 @@ export class MonthCalendar extends LitElement {
       :host [part="month-calendar"] table tr.week td.today {
         background-color: var(--month-today-background-color, #FFFFFF);
         color: var(--month-today-color, #006E51);
-        border: 1px solid var(--month-today-color, #006E51);
+        border: var(--month-today-border-width, 1px) var(--month-today-border-style, solid) var(--month-today-color, #006E51);
         user-select: var(--month-today-user-select, none);
       }
   

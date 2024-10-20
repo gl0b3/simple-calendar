@@ -1,13 +1,13 @@
 {
   "name": "@gl0b3/simple-calendar",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Simple Calendar, containing a Month Calendar and a Year Calendar web componen",
   "main": "./dist/simple-calendar.js",
   "module": "./dist/simple-calendar.js",
   "type": "module",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gl0b3/materialicons.git"
+    "url": "git+https://github.com/gl0b3/simple-calendar.git"
   },
   "author": "Károly Kótay-Szabó",
   "license": "Apache-2.0",
@@ -18,9 +18,9 @@
     }
   ],
   "bugs": {
-    "url": "https://github.com/gl0b3/materialicons/issues"
+    "url": "https://github.com/gl0b3/simple-calendar/issues"
   },
-  "homepage": "https://github.com/gl0b3/materialcons#readme",
+  "homepage": "https://github.com/gl0b3/simple-calendar",
 
   "scripts": {
     "dev": "vite",
