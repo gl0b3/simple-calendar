@@ -1,13 +1,17 @@
 # Simple Calendar (made with Lit Element)
 
 Version: 1.0.0
-Author: Károly Kótay-Szabó
+
+Author: Károly Kótay-Szabó (gl0b3)
+
+Project source: https://github.com/gl0b3/simple-calendar
 
 The Simple Calendar module is designed to visually displaying a month or all months of a given year in table form.
 The components can be imported into your own (Javascript) program and can be customized in terms of date and style, including language localization.
+
+
 If you want, you can use only the Month Calendar component or only the Year Calendar component or even both within a project.
 
-Project source: https://github.com/gl0b3/simple-calendar
 
 Year Calendar for 2024 in English with 'year-is-first' option and narrowed weekdays format:
 
