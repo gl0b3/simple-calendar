@@ -32,6 +32,30 @@ export class MonthCalendar extends LitElement {
     nRoot.innerHTML = MonthCalendar.getStyles();
   }
 
+  public setYear(year: number) {
+    this.year = year;
+  }
+
+  public setMonth(month: number) {
+    this.month = month;
+  }
+
+  public setLocale(locale: string) {
+    this.locale = locale;
+  }
+
+  public setYearIsFirst(yearIsFirst: boolean) {
+    this.yearIsFirst = yearIsFirst;
+  }
+
+  public setShowOtherMonthDays(showOtherMonthDays: boolean) {
+    this.showOtherMonthDays = showOtherMonthDays;
+  }
+
+  public setWeekdayType(weekdayType: "narrow" | "short" | "long") {
+    this.weekdayType = weekdayType;
+  }
+
   /**
    * Renders the template of the custom Lit component
    * @returns {TemplateResult} the template we want to display int he browser
