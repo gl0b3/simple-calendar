@@ -1,6 +1,6 @@
 {
   "name": "@gl0b3/simple-calendar",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A Simple Calendar, containing a Month Calendar and a Year Calendar web componen",
   "main": "./dist/simple-calendar.js",
   "module": "./dist/simple-calendar.js",

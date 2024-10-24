@@ -1,6 +1,6 @@
 # Simple Calendar (made with Lit Element)
 
-Version: 1.0.1
+Version: 1.0.2
 
 Author: Károly Kótay-Szabó (gl0b3)
 
@@ -31,7 +31,7 @@ Whether you want to use `month-calendar` or `year-calendar`, you need to install
 
 Install the `simple-calendar`
 ```
-npm i `@gl0b3/simple-calendar@1.0.0`
+npm i `@gl0b3/simple-calendar@1.0.2`
 ```
 
 ### Month Calendar usage
